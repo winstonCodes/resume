@@ -1,0 +1,141 @@
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    border: 0
+
+body
+  font-size: 16px
+  line-height: 1.6
+  display: flex
+  color: white
+  font-family: "Open Sans", sans-serif
+  font-weight: lighter
+
+h1, h2, h3, h4
+  line-height: 1.2
+  text-transform: uppercase
+  font-family: Roboto, sans-serif
+  letter-spacing: 1px
+
+h1
+  font-size: 2.8em
+h2
+  font-size: 1.3em
+h3
+  font-size: 1.44em
+  font-weight: lighter
+h4
+  font-size: 1.2em
+
+main
+  background-color: #f3f7f7
+  color: #666
+  h2
+    padding-bottom: 10px
+    color: #444
+    border-bottom: solid 3px #ef917e
+  p
+    padding-top: 10px
+    margin-bottom: 30px
+
+section
+  background-color: #5a8a95
+  a
+    color: inherit
+    text-decoration: none
+  a:hover
+    color: #444
+  .highlights
+    h4
+      line-height: 1.6
+    ul
+      margin-bottom: 30px
+  .call-to-action
+    position: relative
+    margin: 40px auto
+    background-color: #ef917e
+    height: 60px
+    line-height: 60px
+    width: 180px
+    border-radius: 20px
+    box-shadow: 0 10px #B27567
+    text-align: center
+    font-weight: bold
+  .call-to-action:hover
+    top: 3px
+    box-shadow: 0 7px #B27567
+    color: inherit
+  .call-to-action:active
+    top: 6px
+    box-shadow: 0 4px #B27567
+
+@media (min-width: 800px)
+  section
+    width: 315px
+    padding: 40px 20px 0
+    display: flex
+    flex-direction: column
+
+  .highlights
+    margin-left: 10px
+    li
+      margin-left: 20px
+
+  .intro
+    .header
+      padding-bottom: 20px
+    .intro-desc
+      width: 180px
+      margin-bottom: 80px
+    h3
+      padding-bottom: 80px
+
+  main
+    display: flex
+    flex-direction: column
+    padding: 100px 20px 0
+    h2
+      max-width: 800px
+    p
+      max-width: 1000px
+
+
+@media (max-width: 800px)
+  body
+    flex-wrap: wrap
+
+  section,
+  main
+    width: 100%
+
+  section
+    text-align: center
+    display: flex
+    flex-direction: column
+    .header
+      padding: 20px
+    .intro-desc
+      padding: 20px
+      width: 100%
+      max-width: 500px
+      margin: auto
+    h3
+      padding: 20px
+    .highlights
+      padding: 20px
+      width: 100%
+      max-width: 250px
+      margin: auto
+      h4
+        margin-bottom: 10px
+      ul
+        text-align: center
+        list-style: none
+    .call-to-action
+      margin-top: 0
+      margin-bottom: 70px
+  main
+    padding: 20px
+    h2
+      padding-left: 30vw
