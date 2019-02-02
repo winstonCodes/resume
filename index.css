@@ -10,6 +10,7 @@ body {
   line-height: 1.6;
   display: flex;
   color: white;
+  background-color: #f3f7f7;
   font-family: "Open Sans", sans-serif;
   font-weight: lighter;
 }
@@ -40,7 +41,6 @@ h4 {
 }
 
 main {
-  background-color: #f3f7f7;
   color: #666;
 }
 main h2 {
@@ -51,6 +51,16 @@ main h2 {
 main p {
   padding-top: 10px;
   margin-bottom: 30px;
+}
+main .link-code {
+  margin-left: 10px;
+}
+main .link-code a {
+  color: #5a8a95;
+  text-decoration: none;
+}
+main .link-code a:hover {
+  color: #ef917e;
 }
 
 section {
@@ -126,7 +136,7 @@ section .call-to-action:active {
     max-width: 800px;
   }
   main p {
-    max-width: 1000px;
+    max-width: 900px;
   }
 }
 @media screen and (max-width: 800px) {
@@ -168,9 +178,10 @@ main {
   section .highlights ul {
     text-align: center;
     list-style: none;
+    margin-bottom: 0;
   }
   section .call-to-action {
-    margin-top: 0;
+    margin-top: 30px;
     margin-bottom: 70px;
   }
 
